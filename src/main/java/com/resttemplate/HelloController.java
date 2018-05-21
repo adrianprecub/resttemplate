@@ -16,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class HelloController {
 
-    private static final Logger logger = LoggerFactory.getLogger(HelloController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(HelloController.class);
 
     private RestTemplate restTemplate;
 
@@ -24,7 +24,6 @@ public class HelloController {
     public HelloController(RestTemplateBuilder builder) {
         this.restTemplate = builder.build();
     }
-
 
 
     @RequestMapping("/")
